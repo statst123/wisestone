@@ -59,50 +59,52 @@ body {
   position: fixed;
   top: 40px;
   right: 80px;
+  width: 50px;
+  height: 50px;
   z-index: 20;
-  width: 350px;
   transition: all 0.8s;
+  color: #fff;
 }
 
-.search-bar {
-  position: relative;
+.searchwrap .conbt {
+  width: 50px;
+  height: 50px;
 }
 
-.searchwrap .search{
-  display: none;
-  width: 0;
-  height: 30px; 
-  border-radius: 50px;
-  background-color: #ddd;
-}
-
-.btn_search {
+.pop_wrap .pop_inner .sr {
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 32px;
-  height: 32px;
-}
-
-.btn_close {
-  display: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 20;
-  width: 32px;
-  height: 32px;
-  background: transparent;
-  border: 1px solid #aaa;
-}
-
-.btn_close a {
-  position: absolute;
-  color: #aaa;
-  font-size: 18px;
+  top: 14%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 60px;
   font-weight: 700;
-  left: 10px;
-  top: 2px;
+  text-shadow: 2px 2px #aaa;
+  color: #eee;
+  text-decoration: underline;
+}
+
+.pop_wrap .pop_inner .searchbar {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 20%;
+  font-size: 40px;
+  background-color: transparent;
+  padding-left: 80px;
+  color: #eee;
+  border-radius: 10px;
+  border: 1px solid #aaa;
+  box-shadow: 0px 5px #fff;
+}
+
+input::-webkit-input-placeholder {
+  text-shadow: 2px 2px #aaa;
+  color: #eee;
+  background: url(../images/search-white.png)no-repeat 0 0;
+  background-size: contain;
+  text-align: center;
 }
 
 .anchors {
@@ -226,7 +228,7 @@ video {
   right: 240px;
   text-align: right;
   color: #fff;
-  z-index: 10;
+  z-index: 20;
   opacity: 0.9;
   font-family: 'Mitr', sans-serif;
   font-weight: 600;
@@ -235,12 +237,14 @@ video {
 .txtbox .tit {
   font-size: 48px;
   margin: 0 0 30px 20px;
+  z-index: 20;
 }
 
 .txtbox .txt {
   line-height: 20px;
   margin-left: 20px;
   font-size: 14px;
+  z-index: 20;
 }
 
 .txt span {
@@ -688,7 +692,8 @@ video {
 .pop_wrap .pop_inner {
   position: absolute; top: 200px; left: 350px;
   display: inline-block; padding: 20px 30px;
-  background: url(../images/bg_collection.jpg)no-repeat 0 0; width: 1200px; height: 500px;
+  background: url(../images/bg_collection.jpg)no-repeat 0 0;
+  width: 1200px; height: 500px;
   background-size: cover;
   font-size: 15px;
 }
@@ -859,15 +864,4 @@ video {
 #page4 .contenttxt .tit:after {
   right: 13%;
   width: 930px;
-}
-
-/* body { cursor: n;} */
-.cursor {
-  width: 20px; height: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  position: absolute;
-  left: 0; top: 0;
-  z-index: 9999;
-  transition: background-color .2s, border-color .2s, border-radius .2s, transform .6s;
 }

@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Mitr:wght@600&family=Trispace&display=swap');
+
+* { margin: 0; padding: 0;}
+li { list-style: none;}
+a {color: #000; text-decoration: none;}
+body {box-sizing: border-box; }
+.bx-wrapper { border: none; box-shadow: none;}
+
+
+
+/* bg item ****************************************************************************************/
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+
+.logo {
+  position: fixed;
+  top: 30px;
+  left: 80px;
+  background: url(../images/hublot-logo-footer.svg) no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 30px;
+  z-index: 20;
+}
+
+.logo a {
+  display: block;
+  position: fixed;
+  top: 30px;
+  left: 125px;
+  color: #fff;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.sns {
+  position: fixed;
+  top: 150px;
+  right: 70px;
+  z-index: 20;
+}
+
+.sns li a {
+  margin-bottom: 30px;
+  font-size: 26px;
+  color: #fff;
+  opacity: 0.6;
+}
+
+.sns li a:hover {
+  opacity: 1;
+}
+
+.searchwrap {
+  position: fixed;
+  top: 40px;
+  right: 80px;
+  z-index: 20;
+  width: 350px;
+  transition: all 0.8s;
+}
+
+.search-bar {
+  position: relative;
+}
+
+.searchwrap .search{
+  display: none;
+  width: 0;
+  height: 30px; 
+  border-radius: 50px;
+  background-color: #ddd;
+}
+
+.btn_search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 32px;
+  height: 32px;
+}
+
+.btn_close {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 20;
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  border: 1px solid #aaa;
+}
+
+.btn_close a {
+  position: absolute;
+  color: #aaa;
+  font-size: 18px;
+  font-weight: 700;
+  left: 10px;
+  top: 2px;
+}
+
+.anchors {
+  position: fixed;
+  top: 40px;
+  left: 230px;
+  z-index: 20;
+}
+
+.anchors ul li {
+  float: left;
+  margin-left: 30px;
+}
+
+.anchors ul li a:hover {
+  color: #fff;
+}
+.anchors ul li a{
+  color: #ddd;
+  font-family: 'Trispace', sans-serif;
+  font-size: 14px;
+}
+
+.bottomlogo {
+  position: fixed;
+  z-index: 20;
+  background: url(../images/hublot-logo-footer.svg)no-repeat;
+  background-size: contain;
+  font-size: 0;
+  width: 60px;
+  height: 50px;
+  bottom: 0px;
+  right: 20px;
+  opacity: 0.8;
+}
+
+.copyright {
+  position: fixed;
+  color: #eee;
+  z-index: 20;
+  font-size: 20px;
+  bottom: 0;
+  left: 0;
+  font-family: 'Island Moments', cursive;
+  letter-spacing: 2px;
+}
+
+#load {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	display: block;
+	opacity: 0.9;
+	background: white;
+	z-index: 99;
+	text-align: center;
+}
+
+#load > img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+  transform: translate(-50%, -50%);
+	z-index: 100;
+}
+

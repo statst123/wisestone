@@ -97,9 +97,6 @@ $(function () {
       this.parentNode.parentNode.style.display = 'none';
     });
   }
-  $('.pop_wrap').on('click', function(){
-    (this).style.display = 'none';
-  });
   });
 
 
@@ -111,11 +108,4 @@ $(function () {
       $('.shopplace li').click(function (){
         $(this).toggleClass('on');
       });
-    });
-
-    const cursor = document.querySelector('.cursor'); 
-
-    cursor.addEventListener('mousemove',(e) => { 
-      cursor.style.left = '${e.clientX}px'; 
-      cursor.style.top = '${e.clientY}px'; 
     });
